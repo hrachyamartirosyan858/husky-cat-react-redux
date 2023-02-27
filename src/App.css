@@ -7,6 +7,74 @@
   pointer-events: none;
 }
 
+.parent-div {
+  height: 285px;
+  width: 190px;
+  border: solid 1px;
+  overflow: hidden;
+}
+.child-div {
+  height: 285px;
+  width: 190px;
+  background-color: #00bcd487;
+}
+
+.time-input {
+  font-family: monospace;
+  width: 190px;
+  height: 30px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid black 1px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.time {
+  font-family: monospace;
+  width: 190px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+.timer-buttons {
+  width: 190px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 8px;
+}
+
+.play-button {
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.pause-button {
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.reset-button {
+  border-color: black;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,18 +82,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  /* color: white; */
 }
 
 @keyframes App-logo-spin {
